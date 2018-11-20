@@ -1,9 +1,19 @@
 # 字典, index - value
 tel = {'Justin':12334, 'Ivy':33333}
+print("type tel =", type(tel))
+#type tel = <class 'dict'>
 tel['Johny']='8888888'
 print("tel =")
 print(tel)
 # {'Justin': 12334, 'Ivy': 33333, 'Johny': '8888888'}
+print(tel['Justin'] == 12334)
+# True
+if tel['Justin'] == 12334:
+    tel['Justin'] = 3333
+
+print("Justin =", tel['Justin'])
+#Justin = 3333
+
 print(tel.keys())
 # dict_keys(['Justin', 'Ivy', 'Johny'])
 print(list(tel.keys()))

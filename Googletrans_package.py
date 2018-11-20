@@ -7,6 +7,8 @@ print(translator.translate('你好.'))
 translations = translator.translate(['The quick brown fox', 'jumps over', 'the lazy dog'], dest='zh-tw')
 for translation in translations:
     print(translation.origin, ' -> ', translation.text)
+    #print(type(translation.text))
+    #'str'
 
 '''
 The quick brown fox  ->  快速的棕色狐狸
