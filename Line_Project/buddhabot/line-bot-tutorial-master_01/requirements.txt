@@ -1,3 +1,0 @@
-line-bot-sdk
-flask
-py_translator==1.8.9
