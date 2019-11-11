@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+  <SELECT NAME="sel_money" id="sel_money" onchange=memory()>
+      <OPTION VALUE="x59Ku3STtesGvZvOW47GwcXyL49sbZIKmmXVv29ChJU=">llibs38
+      <OPTION VALUE="VejRb/EsbgKN/qhEvWjYMCUYSJB6Mb4lloQtiXZUK2M=">karenwang38
+      <OPTION VALUE="fQwZvdt7kUOqM9iD8fkVdR6v1p+O3vmTeDu576xX+mI=">chctrader
+      <OPTION VALUE="+Uu9D00ve1t3R7rP/aLxZTfLAItED5rJx7pOEY/SIrY=">chctrader001
+      <OPTION VALUE="McHvxIefazHIGc8aJ+Qr/MO9kTIZ0c86tcT/EO5pdW0=">大柱
+    </SELECT>
+    <INPUT TYPE="text" NAME="money" value='x59Ku3STtesGvZvOW47GwcXyL49sbZIKmmXVv29ChJU=' id="money" style="width:350px; height:20px;">
+    <br>
+    產品編號: <input type="text" name="Number" />
+
+    <button class="w3-button w3-black w3-margin-bottom" onclick="App.buyToken()">加入購物車</button>
+
+</body>
+
+
+
+
+
+  <script>
+
+    function memory()
+      {
+          var x = document.getElementById('sel_money').value;
+          document.getElementById('money').value = x
+
+      }
+
+
+
+
+  data={
+    product_sernum: '744',
+    account_id: 'x59Ku3STtesGvZvOW47GwcXyL49sbZIKmmXVv29ChJU=',
+    set_number: '1',
+    pay_way: '2',
+    vip_rating: '4'
+  }
+
+  const proxyurl = "https://cors-anywhere.herokuapp.com/";
+
+  url = 'https://www.mochange.co/products/add_to_cart.php'
+
+  postData(url, data)
+  .then(data => console.log(data)) // JSON from `response.json()` call
+  .catch(error => console.error(error))
+
+
+  function postData(url, data) {
+    // Default options are marked with *
+    return fetch(proxyurl + url, {
+      body: JSON.stringify(data), // must match 'Content-Type' header
+      cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: 'same-origin', // include, same-origin, *omit
+      headers: {
+        'Accept': '*/*',
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'Origin': 'https://www.mochange.co',
+        'Referer': 'https://www.mochange.co/products/shop_info.php?product_sernum='+data['product_sernum'],
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+        'X-Requested-With': 'XMLHttpRequest',
+        'Access-Control-Allow-Origin': 'http://localhost:3000',
+        'Access-Control-Allow-Credentials': 'true'
+      },
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      mode: 'cors', // no-cors, cors, *same-origin
+      redirect: 'follow', // manual, *follow, error
+      referrer: 'no-referrer', // *client, no-referrer
+      Origin: 'https://www.mochange.co',
+    })
+    .then(response => response.text()) // 輸出成 json
+
+
+
+
+  }
+
+
+
+
+
+  </script>
+
+
+
+
+</html>

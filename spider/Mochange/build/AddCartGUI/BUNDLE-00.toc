@@ -1,0 +1,3 @@
+([('AddCartGUI',
+   '/Users/karenwang/Desktop/Program/Python/spider/Mochange/dist/AddCartGUI',
+   'EXECUTABLE')],)
