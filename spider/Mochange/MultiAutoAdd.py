@@ -105,6 +105,8 @@ def AccountAdd(id):
                 '200075',
                 '200024',
                 '200021',
+                '200280',
+                '200272',
                 '709',
                 '651',
                 '628',
@@ -122,22 +124,22 @@ def AccountAdd(id):
 
     time_flag = True
 
-    time_period = 8 # min
+    time_period = 3 # min
     # 1 min = 60 sec = 60*60 micro sec
 
     run_time = 1570420680 # 20191006 11:58
-    sleeptime = 1 # min
+    sleeptime = 0 # min
     onlyAdd = True
 
 
     if id == '+Uu9D00ve1t3R7rP/aLxZTfLAItED5rJx7pOEY/SIrY=':    # chctrader001
         AddList = LiveList + SpaList
     elif id == 'x59Ku3STtesGvZvOW47GwcXyL49sbZIKmmXVv29ChJU=':  # llibs38
-        AddList = MealList
+        AddList = MealList + LiveList + SpaList
     elif id == 'fQwZvdt7kUOqM9iD8fkVdR6v1p+O3vmTeDu576xX+mI=':  # chctrader
         AddList = MealList[:9]
     elif id == 'VejRb/EsbgKN/qhEvWjYMCUYSJB6Mb4lloQtiXZUK2M=':  # karenwang38
-        AddList = MealList[9:]
+        AddList = MealList
     ###################################  initial parameter
     # print('id:', id)
     print('id:', id, '\nAddlist= ', AddList)
@@ -169,10 +171,10 @@ def AccountAdd(id):
                     print('停止購買。')
                     time_flag = False
                     break
-                #time.sleep(3)
+                #time.(3)
             if time_flag == False:
                 break
-            time.sleep(sleeptime*60)
+            # time.(time*60)
     else:
         BuyTicket(id, email, AddList, False, onlyAdd, computer)
 

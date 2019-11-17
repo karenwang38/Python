@@ -15,7 +15,7 @@ def AccountPay(mail):
         computer = 'windows'
     elif mail == 'llibs38@gmail.com': # not use to pay
         id = 'x59Ku3STtesGvZvOW47GwcXyL49sbZIKmmXVv29ChJU='
-        computer = 'xxx'
+        computer = 'asus'
     elif mail == 'karen.wang38@gmail.com':
         id = 'VejRb/EsbgKN/qhEvWjYMCUYSJB6Mb4lloQtiXZUK2M='
         computer = 'debbieS'
@@ -23,25 +23,34 @@ def AccountPay(mail):
         id = 'fQwZvdt7kUOqM9iD8fkVdR6v1p+O3vmTeDu576xX+mI='
         computer = 'mac'
 
+    time_period = 0.1/6 #min
+
     # Login(mail, computer)
     # Payment('fQwZvdt7kUOqM9iD8fkVdR6v1p+O3vmTeDu576xX+mI=', 0, computer)
+    start_time = time.time()
     while True:
-        print("email: ", mail, "\nid: ", id, '\n computer: ', computer)
-        cart_list = CartList(mail, computer)
-        print('loop car list', cart_list, ' mail: ', mail)
-        # 購物車有東西後開始付款
-        if cart_list != []:
-            print('購物車有東西: ', len(cart_list), mail , '\n',time.asctime( time.localtime(time.time()) ))
-            if Payment(id, 0, computer) == '庫存不足':
-                ClearCart(id)
-                print('庫存不足。清空購物車！')
+            end_time = time.time()
+            if (end_time - start_time) <= (time_period*60):
+                print('執行時間：', end_time - start_time)
+                print("email: ", mail, "\nid: ", id, '\n computer: ', computer)
+                cart_list = CartList(mail, computer)
+                print('loop car list', cart_list, ' mail: ', mail)
+                # 購物車有東西後開始付款
+                if cart_list != []:
+                    print('購物車有東西: ', len(cart_list), mail , '\n',time.asctime( time.localtime(time.time()) ))
+                    if Payment(id, 0, computer) == '庫存不足':
+                        ClearCart(id)
+                        print('庫存不足。清空購物車！')
+                    else:
+                        print('交易成功 or 交易錯誤')
+                    print('付款時間: ', mail , '\n',time.asctime( time.localtime(time.time()) ))
+                else:
+                    print('購物車為空！')
+                print(time.asctime( time.localtime(time.time()) ))
+                print('#################################')
             else:
-                print('交易成功 or 交易錯誤')
-            print('付款時間: ', mail , '\n',time.asctime( time.localtime(time.time()) ))
-        else:
-            print('購物車為空！')
-        print(time.asctime( time.localtime(time.time()) ))
-        print('#################################')
+                print('購買時間截止！')
+                break
 
 
 if __name__ == '__main__':
@@ -49,11 +58,14 @@ if __name__ == '__main__':
     mailList = ['chctrader@gmail.com',
                 'chctrader001@gmail.com',
                 'karen.wang38@gmail.com',
+                'llibs38@gmail.com',
                 'chctrader001@gmail.com',
                 'chctrader@gmail.com',
                 'karen.wang38@gmail.com',
+                'llibs38@gmail.com',
                 'chctrader@gmail.com',
-                'karen.wang38@gmail.com']
+                'karen.wang38@gmail.com',
+                'llibs38@gmail.com',]
     # mailList = ['chctrader001@gmail.com', 'llibs38@gmail.com']
     # mailList = ['llibs38@gmail.com', 'chctrader@gmail.com']
     # print(p.map(f, [2,4,6])) # 將f函式的操作給程序池

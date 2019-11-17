@@ -3,7 +3,7 @@ from excelUseSample import *
 
 emailList = ['karen.wang38@gmail.com', 'chctrader@gmail.com', 'llibs38@gmail.com', 'chctrader001@gmail.com']
 filename = '券集商城大集合713.xlsx'
-sheetName = '20191107'
+sheetName = '20191115'
 SheetAll = ShowSheet(filename)
 sheetExit = False
 
