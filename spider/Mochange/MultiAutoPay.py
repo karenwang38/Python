@@ -23,7 +23,7 @@ def AccountPay(mail):
         id = 'fQwZvdt7kUOqM9iD8fkVdR6v1p+O3vmTeDu576xX+mI='
         computer = 'mac'
 
-    time_period = 0.1/6 #min
+    time_period = 4 #min
 
     # Login(mail, computer)
     # Payment('fQwZvdt7kUOqM9iD8fkVdR6v1p+O3vmTeDu576xX+mI=', 0, computer)
