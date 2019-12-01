@@ -22,6 +22,9 @@ def AccountPay(mail):
     elif mail == 'chctrader@gmail.com':
         id = 'fQwZvdt7kUOqM9iD8fkVdR6v1p+O3vmTeDu576xX+mI='
         computer = 'mac'
+    elif mail == 'diabloiiiblizzard@gmail.com':
+        id = 'Knnjqe9jKT8z0Kp1XzNoT3wSmoqDggIhtnNuFLUalMs='
+        computer = 'pigpig'
 
     time_period = 4 #min
 
@@ -58,12 +61,15 @@ if __name__ == '__main__':
     mailList = ['chctrader@gmail.com',
                 'chctrader001@gmail.com',
                 'karen.wang38@gmail.com',
+                'diabloiiiblizzard@gmail.com',
                 'llibs38@gmail.com',
                 'chctrader001@gmail.com',
                 'chctrader@gmail.com',
+                'diabloiiiblizzard@gmail.com',
                 'karen.wang38@gmail.com',
                 'llibs38@gmail.com',
                 'chctrader@gmail.com',
+                'diabloiiiblizzard@gmail.com',
                 'karen.wang38@gmail.com',
                 'llibs38@gmail.com',]
     # mailList = ['chctrader001@gmail.com', 'llibs38@gmail.com']

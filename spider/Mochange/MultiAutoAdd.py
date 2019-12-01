@@ -10,7 +10,8 @@ print('process number:', mp.cpu_count())
 idList = ['+Uu9D00ve1t3R7rP/aLxZTfLAItED5rJx7pOEY/SIrY=',  # chctrader001
           'x59Ku3STtesGvZvOW47GwcXyL49sbZIKmmXVv29ChJU=',  # llibs38
           'VejRb/EsbgKN/qhEvWjYMCUYSJB6Mb4lloQtiXZUK2M=',  # karenwang38
-          'fQwZvdt7kUOqM9iD8fkVdR6v1p+O3vmTeDu576xX+mI=']  # chctrader
+          'fQwZvdt7kUOqM9iD8fkVdR6v1p+O3vmTeDu576xX+mI='   # chctrader
+          'Knnjqe9jKT8z0Kp1XzNoT3wSmoqDggIhtnNuFLUalMs=']  # diabloiiiblizzard
 # idList = ['fQwZvdt7kUOqM9iD8fkVdR6v1p+O3vmTeDu576xX+mI=']
 
 def f(x):
@@ -96,33 +97,40 @@ def AccountAdd(id):
                 '383',
                 '382',
                 ]
-    MealList = ['200219',
-                '200216',
-                '200200',
-                '200180',
-                '200177',
-                '200076',
-                '200075',
-                '200024',
+    MealList = ['512',
+                '514',
+                '516',
                 '200021',
-                '200280',
-                '200272',
-                '709',
-                '651',
+                '200024',
+                '200075',
+                '200076',
+                '200177',
                 '628',
-                '626',
-                '624',
-                '620',
-                '509',
-                '507',
-                '489',
-                '488',
-                '364',
-                '200284',
-                '200287',
+                '651',
+                '683',
+                '709',
+                '539',
+                '200120',
+                '200188',
+                '200272',
+                '200303',
                 '200293',
                 '200296',
-                '200303',
+                '200318',
+                '200284',
+                '200287',
+                '200180',
+                '200216',
+                '200219',
+                '200280',
+                '364',
+                '531',
+                '624',
+                '626',
+                '200336',
+                '517',
+                '522',
+                '561',
                 ]
 
 
@@ -136,15 +144,66 @@ def AccountAdd(id):
     sleeptime = 0 # min
     onlyAdd = True
 
+    num = round(len(MealList)/4)
+    print('## MealList: ', MealList)
+
 
     if id == '+Uu9D00ve1t3R7rP/aLxZTfLAItED5rJx7pOEY/SIrY=':    # chctrader001
-        AddList = LiveList + SpaList
+        # AddList = LiveList + SpaList
+        AddList = [ '512',
+                    '514',
+                    '516',
+                    '539',
+                    '200120',
+                    '200188',
+                    '200272',
+                    '200303',
+                    '200293',
+                    '200296',
+                    '200318',
+                    '200284',
+                    '200287',]
     elif id == 'x59Ku3STtesGvZvOW47GwcXyL49sbZIKmmXVv29ChJU=':  # llibs38
-        AddList = MealList + LiveList + SpaList
-    elif id == 'fQwZvdt7kUOqM9iD8fkVdR6v1p+O3vmTeDu576xX+mI=':  # chctrader
-        AddList = MealList[:9]
-    elif id == 'VejRb/EsbgKN/qhEvWjYMCUYSJB6Mb4lloQtiXZUK2M=':  # karenwang38
+        # AddList = MealList + LiveList + SpaList
         AddList = MealList
+    elif id == 'fQwZvdt7kUOqM9iD8fkVdR6v1p+O3vmTeDu576xX+mI=':  # chctrader
+        # AddList = MealList[:9]
+        AddList = [ '512',
+                    '514',
+                    '516',
+                    '200021',
+                    '200024',
+                    '200075',
+                    '200076',
+                    '200177',
+                    '628',
+                    '651',
+                    '683',
+                    '709',]
+    elif id == 'VejRb/EsbgKN/qhEvWjYMCUYSJB6Mb4lloQtiXZUK2M=':  # karenwang38
+        # AddList = MealList
+        AddList = [ '512',
+                    '514',
+                    '516',
+                    '200180',
+                    '200216',
+                    '200219',
+                    '200280',
+                    '364',
+                    '531',
+                    '624',
+                    '626',
+                    '200336',]
+    elif id == 'Knnjqe9jKT8z0Kp1XzNoT3wSmoqDggIhtnNuFLUalMs=': # diabloiiiblizzard
+        AddList = [ '512',
+                    '514',
+                    '516',
+                    '683',
+                    '531',
+                    '200336',
+                    '517',
+                    '522',
+                    '561',]
     ###################################  initial parameter
     # print('id:', id)
     print('id:', id, '\nAddlist= ', AddList)

@@ -33,7 +33,8 @@ comboExample = ttk.Combobox(root,
                                     "chctrader",
                                     "chctrader001",
                                     "big",
-                                    "bigwife"])
+                                    "bigwife",
+                                    "diabloiiiblizzard"])
 print(dict(comboExample))
 comboExample.grid(column=0, row=1)
 comboExample.current(1)
@@ -54,6 +55,9 @@ def callbackFunc(event):
         select_id = 'McHvxIefazHIGc8aJ+Qr/MO9kTIZ0c86tcT/EO5pdW0='
     elif comboExample.get() == 'bigwife':
         select_id = 'LEaQKEFNEYu162lrP3E7UAP2D2UpSdVJikadItCtfSw='
+    elif comboExample.get() == 'diabloiiiblizzard':
+        select_id = 'Knnjqe9jKT8z0Kp1XzNoT3wSmoqDggIhtnNuFLUalMs='
+
 
     context_label.configure(text="ID: " + select_id)
     print('context_label.get()', )
@@ -74,6 +78,8 @@ def AddCartButton():
         select_id = 'McHvxIefazHIGc8aJ+Qr/MO9kTIZ0c86tcT/EO5pdW0='
     elif comboExample.get() == 'bigwife':
         select_id = 'LEaQKEFNEYu162lrP3E7UAP2D2UpSdVJikadItCtfSw='
+    elif comboExample.get() == 'diabloiiiblizzard':
+        select_id = 'Knnjqe9jKT8z0Kp1XzNoT3wSmoqDggIhtnNuFLUalMs='
     else:
         select_id = 'No this Account'
     number = number_entry.get() or 'NUMBER'
@@ -90,6 +96,9 @@ def CartListButton():
         email = 'chctrader@gmail.com'
     elif comboExample.get() == 'chctrader001':
         email = 'chctrader001@gmail.com'
+    elif comboExample.get() == 'diabloiiiblizzard':
+        email = 'diabloiiiblizzard@gmail.com'
+
     else:
         email = 'wrong email'
 
@@ -117,6 +126,8 @@ def CleanCartButton():
         select_id = 'McHvxIefazHIGc8aJ+Qr/MO9kTIZ0c86tcT/EO5pdW0='
     elif comboExample.get() == 'bigwife':
         select_id = 'LEaQKEFNEYu162lrP3E7UAP2D2UpSdVJikadItCtfSw='
+    elif comboExample.get() == 'diabloiiiblizzard':
+        select_id = 'Knnjqe9jKT8z0Kp1XzNoT3wSmoqDggIhtnNuFLUalMs='
     else:
         select_id = 'No this Account'
 
@@ -141,6 +152,10 @@ def PaymentButton():
         select_id = 'McHvxIefazHIGc8aJ+Qr/MO9kTIZ0c86tcT/EO5pdW0='
     elif comboExample.get() == 'bigwife':
         select_id = 'LEaQKEFNEYu162lrP3E7UAP2D2UpSdVJikadItCtfSw='
+    elif comboExample.get() == 'diabloiiiblizzard':
+        select_id = 'Knnjqe9jKT8z0Kp1XzNoT3wSmoqDggIhtnNuFLUalMs='
+        select_email = 'diabloiiiblizzard@gmail.com'
+
     else:
         select_id = 'No this Account'
 

@@ -136,6 +136,26 @@ def Login(email, computer):
 
 
         }
+    elif computer == 'pigpig':
+        login_headers = {
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+            'Cache-Control': 'max-age=0',
+            'Connection': 'keep-alive',
+            'Content-Length': '55',
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Cookie': '_ga=GA1.2.203279062.1562989751; PHPSESSID=78tjrt78s5ijrlgbe7i8uvelf5; _gid=GA1.2.576081831.1575105621; _fbp=fb.1.1575105621920.719247802; _gat_gtag_UA_139121893_1=1',
+            'Host': 'www.mochange.co',
+            'Origin': 'https://mochange.mohist.com.tw',
+            'Referer': 'https://mochange.mohist.com.tw/FrontEnd/member_login/Google_Login.php?domain=www.mochanji.com',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'same-origin',
+            'Sec-Fetch-User': '?1',
+            'Upgrade-Insecure-Requests': '1',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        }
+
 
 
 
@@ -451,6 +471,25 @@ def Payment(id, email, computer):
             'Upgrade-Insecure-Requests': '1',
             'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
         }
+    elif computer == 'pigpig':
+        key_headers = {
+            # debbies computer
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+            'Cache-Control': 'max-age=0',
+            'Connection': 'keep-alive',
+            'Cookie': '_ga=GA1.2.203279062.1562989751; PHPSESSID=78tjrt78s5ijrlgbe7i8uvelf5; _gid=GA1.2.576081831.1575105621; _fbp=fb.1.1575105621920.719247802; _gat_gtag_UA_139121893_1=1',
+            'Host': 'www.mochange.co',
+            'Origin': 'https://www.mochange.co',
+            'Referer': 'https://www.mochange.co/cart/cart.php',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'same-origin',
+            'Sec-Fetch-User': '?1',
+            'Upgrade-Insecure-Requests': '1',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        }
+
 
 
 
@@ -490,7 +529,9 @@ def Payment(id, email, computer):
         content_length = '63'
         # karenwang's cookie
         cookie = 'PHPSESSID=abt6qj1bprtn03n3hl70obcbe4; _ga=GA1.2.1901514088.1561195421; _fbp=fb.1.1561195421075.1690105961; _gid=GA1.2.2023715889.1562558257; _gat_gtag_UA_139121893_1=1'
-
+    elif id == 'Knnjqe9jKT8z0Kp1XzNoT3wSmoqDggIhtnNuFLUalMs=':
+        content_length = '57'
+        cookie = 'PHPSESSID=abt6qj1bprtn03n3hl70obcbe4; _ga=GA1.2.1901514088.1561195421; _fbp=fb.1.1561195421075.1690105961; _gid=GA1.2.2023715889.1562558257; _gat_gtag_UA_139121893_1=1'
     print("id: ", id)
     # print("content_length: ", content_length)
     # print("cookie: ", cookie)
@@ -627,6 +668,28 @@ def Payment(id, email, computer):
                     'Sec-Fetch-User': '?1',
                     'Upgrade-Insecure-Requests': '1',
                     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+
+                }
+            elif computer == 'pigpig':
+                procell_headers = {
+
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+                    'Accept-Encoding': 'gzip, deflate, br',
+                    'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+                    'Cache-Control': 'max-age=0',
+                    'Connection': 'keep-alive',
+                    'Content-Length': '55',
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    # 'Cookie': cookie,
+                    'Cookie': '_ga=GA1.2.203279062.1562989751; PHPSESSID=78tjrt78s5ijrlgbe7i8uvelf5; _gid=GA1.2.576081831.1575105621; _fbp=fb.1.1575105621920.719247802; _gat_gtag_UA_139121893_1=1',
+                    'Host': 'www.mochange.co',
+                    'Origin': 'https://www.mochange.co',
+                    'Referer': 'https://www.mochange.co/cart/payment.php',
+                    'Sec-Fetch-Mode': 'navigate',
+                    'Sec-Fetch-Site': 'same-origin',
+                    'Sec-Fetch-User': '?1',
+                    'Upgrade-Insecure-Requests': '1',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
 
                 }
 
@@ -923,6 +986,20 @@ def CartList(email, computer):
             'Upgrade-Insecure-Requests': '1',
             'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
         }
+    elif computer == 'pigpig':
+        headers = {
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+            'Cache-Control': 'max-age=0',
+            'Connection': 'keep-alive',
+            'Cookie': '_ga=GA1.2.203279062.1562989751; PHPSESSID=78tjrt78s5ijrlgbe7i8uvelf5; _gid=GA1.2.576081831.1575105621; _fbp=fb.1.1575105621920.719247802; _gat_gtag_UA_139121893_1=1',
+            'Host': 'www.mochange.co',
+            'Referer': 'https://www.mochange.co/index/index.php',
+            'Upgrade-Insecure-Requests': '1',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+        }
+
 
 
 
