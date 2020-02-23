@@ -20,6 +20,7 @@ root.geometry("560x380") # 視窗大小
 
 
 context_label=tk.Label(root) # "ID"顯示
+computer_label=tk.Label(root) # "computer"顯示
 cartlist_label=tk.Label(root) # "購物車清單" 顯示
 number_label = tk.Label(root, text="商品編號") # "商品編號"
 
@@ -39,6 +40,23 @@ print(dict(comboExample))
 comboExample.grid(column=0, row=1)
 comboExample.current(1)
 
+# 電腦選單（下拉式選單）
+computerExample = ttk.Combobox(root,
+                            values=[
+                                    "mac",
+                                    "windows",])
+print(dict(computerExample))
+computerExample.grid(column=0, row=1)
+computerExample.current(1)
+
+
+def computercallbackFunc(event):
+    print(computerExample.current(), computerExample.get())
+    computer = computerExample.get()
+
+    computer_label.configure(text="computer: " + computer)
+    print('computer_label.get()', )
+    return computer
 
 def callbackFunc(event):
     select_id = ''
@@ -102,6 +120,8 @@ def CartListButton():
     else:
         email = 'wrong email'
 
+    computer = computerExample.get()
+
     if email != 'wrong email':
         List = CartList(email, computer)
         for cartList in List:
@@ -159,6 +179,8 @@ def PaymentButton():
     else:
         select_id = 'No this Account'
 
+    computer = computerExample.get()
+
     payResult = Payment(select_id,select_email,computer)
     cartlist_label.configure(text=payResult)
 
@@ -186,7 +208,12 @@ comboExample.bind("<<ComboboxSelected>>", callbackFunc)
 
 comboExample.pack()
 
+
 context_label.pack()
+
+computerExample.bind("<<ComboboxSelected>>", computercallbackFunc)
+computerExample.pack()
+computer_label.pack()
 
 
 number_label.pack()

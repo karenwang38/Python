@@ -54,43 +54,76 @@ def Login(email, computer):
 
     if computer == 'mac':
         login_headers = {
-            # karen mac
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+            # # karen mac
+            # 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+            # 'Accept-Encoding': 'gzip, deflate, br',
+            # 'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+            # 'Cache-Control': 'max-age=0',
+            # 'Connection': 'keep-alive',
+            # 'Content-Length': '59',
+            # 'Content-Type': 'application/x-www-form-urlencoded',
+            # 'Cookie': 'PHPSESSID=8dauvv3tblj3qeckov32j8jlt4; _ga=GA1.2.249788333.1567947916; _fbp=fb.1.1567947917202.1321095142; _gid=GA1.2.1080974198.1570156735; _gat_gtag_UA_139121893_1=1',
+            # 'Host': 'www.mochange.co',
+            # 'Origin': 'https://mochange.mohist.com.tw',
+            # 'Referer': 'https://mochange.mohist.com.tw/FrontEnd/member_login/Google_Login.php?domain=www.mochange.co',
+            # 'Sec-Fetch-Mode': 'navigate',
+            # 'Sec-Fetch-Site': 'cross-site',
+            # 'Sec-Fetch-User': '?1',
+            # 'Upgrade-Insecure-Requests': '1',
+            # 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'Accept-Encoding': 'gzip, deflate, br',
             'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
-            'Cache-Control': 'max-age=0',
             'Connection': 'keep-alive',
             'Content-Length': '59',
             'Content-Type': 'application/x-www-form-urlencoded',
-            'Cookie': 'PHPSESSID=8dauvv3tblj3qeckov32j8jlt4; _ga=GA1.2.249788333.1567947916; _fbp=fb.1.1567947917202.1321095142; _gid=GA1.2.1080974198.1570156735; _gat_gtag_UA_139121893_1=1',
+            'Cookie': '_ga=GA1.2.249788333.1567947916; _fbp=fb.1.1567947917202.1321095142; PHPSESSID=3psvbgn213e05rvcfkep1dlp85; _gid=GA1.2.1040713635.1582003150',
             'Host': 'www.mochange.co',
             'Origin': 'https://mochange.mohist.com.tw',
             'Referer': 'https://mochange.mohist.com.tw/FrontEnd/member_login/Google_Login.php?domain=www.mochange.co',
             'Sec-Fetch-Mode': 'navigate',
-            'Sec-Fetch-Site': 'cross-site',
+            'Sec-Fetch-Site': 'same-origin',
             'Sec-Fetch-User': '?1',
             'Upgrade-Insecure-Requests': '1',
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36',
+
 
         }
 
     elif computer == 'windows':
         login_headers = {
-            # llibs windows
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+            # # llibs windows
+            # 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+            # 'Accept-Encoding': 'gzip, deflate, br',
+            # 'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+            # 'Cache-Control': 'max-age=0',
+            # 'Connection': 'keep-alive',
+            # 'Content-Length': '54',
+            # 'Content-Type': 'application/x-www-form-urlencoded',
+            # 'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=ft987iase39p75g278r50eb7q6; _gid=GA1.2.749101058.1571282254; _gat_gtag_UA_139121893_1=1',
+            # 'Host': 'www.mochange.co',
+            # 'Origin': 'https://mochange.mohist.com.tw',
+            # 'Referer': 'https://mochange.mohist.com.tw/FrontEnd/member_login/Google_Login.php?domain=www.mochanji.com',
+            # 'Upgrade-Insecure-Requests': '1',
+            # 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36',
+
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'Accept-Encoding': 'gzip, deflate, br',
             'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
             'Cache-Control': 'max-age=0',
             'Connection': 'keep-alive',
             'Content-Length': '54',
             'Content-Type': 'application/x-www-form-urlencoded',
-            'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=ft987iase39p75g278r50eb7q6; _gid=GA1.2.749101058.1571282254; _gat_gtag_UA_139121893_1=1',
+            'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=sqtjeplfhvnnhq3nspbltd42b7; _gid=GA1.2.1497596523.1581836286; _gat_gtag_UA_139121893_1=1',
             'Host': 'www.mochange.co',
             'Origin': 'https://mochange.mohist.com.tw',
             'Referer': 'https://mochange.mohist.com.tw/FrontEnd/member_login/Google_Login.php?domain=www.mochanji.com',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'same-origin',
+            'Sec-Fetch-User': '?1',
             'Upgrade-Insecure-Requests': '1',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36',
-
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36',
 
         }
 
@@ -408,7 +441,8 @@ def Payment(id, email, computer):
             'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
             'Cache-Control': 'max-age=0',
             'Connection': 'keep-alive',
-            'Cookie': 'PHPSESSID=8dauvv3tblj3qeckov32j8jlt4; _ga=GA1.2.249788333.1567947916; _fbp=fb.1.1567947917202.1321095142; _gid=GA1.2.1080974198.1570156735',
+            # 'Cookie': 'PHPSESSID=8dauvv3tblj3qeckov32j8jlt4; _ga=GA1.2.249788333.1567947916; _fbp=fb.1.1567947917202.1321095142; _gid=GA1.2.1080974198.1570156735',
+            'Cookie': '_ga=GA1.2.249788333.1567947916; _fbp=fb.1.1567947917202.1321095142; PHPSESSID=3psvbgn213e05rvcfkep1dlp85; _gid=GA1.2.1040713635.1582003150',
             'Host': 'www.mochange.co',
             'Referer': 'https://www.mochange.co/cart/cart.php',
             'Sec-Fetch-Mode': 'navigate',
@@ -428,7 +462,10 @@ def Payment(id, email, computer):
             'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
             'Cache-Control': 'max-age=0',
             'Connection': 'keep-alive',
-            'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=ft987iase39p75g278r50eb7q6; _gid=GA1.2.749101058.1571282254; _gat_gtag_UA_139121893_1=1',
+            # 'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=ft987iase39p75g278r50eb7q6; _gid=GA1.2.749101058.1571282254; _gat_gtag_UA_139121893_1=1',
+            # 'Cookie': '_ga=GA1.2.249788333.1567947916; _fbp=fb.1.1567947917202.1321095142; PHPSESSID=3psvbgn213e05rvcfkep1dlp85; _gid=GA1.2.1040713635.1582003150',
+            'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=sqtjeplfhvnnhq3nspbltd42b7; _gid=GA1.2.1497596523.1581836286; _gat_gtag_UA_139121893_1=1',
+            # 'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=sqtjeplfhvnnhq3nspbltd42b7; _gid=GA1.2.1497596523.1581836286; _gat_gtag_UA_139121893_1=1',
             'Host': 'www.mochange.co',
             'Referer': 'https://www.mochange.co/cart/cart.php',
             'Upgrade-Insecure-Requests': '1',
@@ -516,7 +553,8 @@ def Payment(id, email, computer):
 
     if id == 'VejRb/EsbgKN/qhEvWjYMCUYSJB6Mb4lloQtiXZUK2M=':
         content_length = '61'
-        cookie = 'PHPSESSID=abt6qj1bprtn03n3hl70obcbe4; _ga=GA1.2.1901514088.1561195421; _fbp=fb.1.1561195421075.1690105961; _gid=GA1.2.2023715889.1562558257; _gat_gtag_UA_139121893_1=1'
+        # cookie = 'PHPSESSID=abt6qj1bprtn03n3hl70obcbe4; _ga=GA1.2.1901514088.1561195421; _fbp=fb.1.1561195421075.1690105961; _gid=GA1.2.2023715889.1562558257; _gat_gtag_UA_139121893_1=1'
+        cookie = '_ga=GA1.2.249788333.1567947916; _fbp=fb.1.1567947917202.1321095142; PHPSESSID=3psvbgn213e05rvcfkep1dlp85; _gid=GA1.2.93618663.1582430731'
     elif id == 'x59Ku3STtesGvZvOW47GwcXyL49sbZIKmmXVv29ChJU=':
         content_length = '57'
         # karenwang's cookie
@@ -572,173 +610,164 @@ def Payment(id, email, computer):
         result = session_requests.post(url, data = payload, headers = headers)
         if result.status_code == requests.codes.ok:
             print('### pay result ###:', result.text)
-            # if result.text == 'n':
-            #
-            #
-            #
-            #
-            #
-            # else:
-            #     print("!!付款  CHECK FAIL!!!", url)
+            if result.text == 'n':
+                print('Nothing To Pay!!!')
+            else:
+                print("!!付款  中!!!", url)
+                print("付款  check Success!", url)
 
-            print("付款  check Success!", url)
+                process_url = 'https://www.mochange.co/cart/ProcessTransData.php'
+                if computer == 'mac':
+                    procell_headers = {
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+                        'Accept-Encoding': 'gzip, deflate, br',
+                        'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+                        'Cache-Control': 'max-age=0',
+                        'Connection': 'keep-alive',
+                        'Content-Length': '55',
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        # 'Cookie': cookie,
+                        # 'Cookie': 'PHPSESSID=8dauvv3tblj3qeckov32j8jlt4; _ga=GA1.2.249788333.1567947916; _fbp=fb.1.1567947917202.1321095142; _gid=GA1.2.309458116.1572321506; _gat_gtag_UA_139121893_1=1',
+                        'Cookie': '_ga=GA1.2.249788333.1567947916; _fbp=fb.1.1567947917202.1321095142; PHPSESSID=3psvbgn213e05rvcfkep1dlp85; _gid=GA1.2.93618663.1582430731',
+                        'Host': 'www.mochange.co',
+                        'Origin': 'https://www.mochange.co',
+                        'Referer': 'https://www.mochange.co/cart/payment.php',
+                        'Sec-Fetch-Mode': 'navigate',
+                        'Sec-Fetch-Site': 'same-origin',
+                        'Sec-Fetch-User': '?1',
+                        'Upgrade-Insecure-Requests': '1',
+                        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
 
-            process_url = 'https://www.mochange.co/cart/ProcessTransData.php'
-            if computer == 'mac':
-                procell_headers = {
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
-                    'Accept-Encoding': 'gzip, deflate, br',
-                    'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
-                    'Cache-Control': 'max-age=0',
-                    'Connection': 'keep-alive',
-                    'Content-Length': '55',
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    # 'Cookie': cookie,
-                    'Cookie': 'PHPSESSID=8dauvv3tblj3qeckov32j8jlt4; _ga=GA1.2.249788333.1567947916; _fbp=fb.1.1567947917202.1321095142; _gid=GA1.2.309458116.1572321506; _gat_gtag_UA_139121893_1=1',
-                    'Host': 'www.mochange.co',
-                    'Origin': 'https://www.mochange.co',
-                    'Referer': 'https://www.mochange.co/cart/payment.php',
-                    'Sec-Fetch-Mode': 'navigate',
-                    'Sec-Fetch-Site': 'same-origin',
-                    'Sec-Fetch-User': '?1',
-                    'Upgrade-Insecure-Requests': '1',
-                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+                    }
+                elif computer == 'windows':
+                    procell_headers = {
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+                        'Accept-Encoding': 'gzip, deflate, br',
+                        'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+                        'Cache-Control': 'max-age=0',
+                        'Connection': 'keep-alive',
+                        'Content-Length': '55',
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        # 'Cookie': cookie,
+                        # 'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=ft987iase39p75g278r50eb7q6; _gid=GA1.2.749101058.1571282254; _gat_gtag_UA_139121893_1=1',
+                        'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=sqtjeplfhvnnhq3nspbltd42b7; _gid=GA1.2.1497596523.1581836286; _gat_gtag_UA_139121893_1=1',
+                        'Host': 'www.mochange.co',
+                        'Origin': 'https://www.mochange.co',
+                        'Referer': 'https://www.mochange.co/cart/payment.php',
+                        'Sec-Fetch-Mode': 'navigate',
+                        'Sec-Fetch-Site': 'same-origin',
+                        'Sec-Fetch-User': '?1',
+                        'Upgrade-Insecure-Requests': '1',
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
 
+                    }
+
+                elif computer == 'debbieS':
+                    procell_headers = {
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+                        'Accept-Encoding': 'gzip, deflate, br',
+                        'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+                        'Cache-Control': 'max-age=0',
+                        'Connection': 'keep-alive',
+                        'Content-Length': '55',
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        # 'Cookie': cookie,
+                        'Cookie': '_ga=GA1.2.813832450.1563535954; PHPSESSID=5ds1iobsb93pki8deb6r1d0j01; _gid=GA1.2.1376374077.1572513755; _fbp=fb.1.1572513755454.1839800735; _gat_gtag_UA_139121893_1=1',
+                        'Host': 'www.mochange.co',
+                        'Origin': 'https://www.mochange.co',
+                        'Referer': 'https://www.mochange.co/cart/payment.php',
+                        'Sec-Fetch-Mode': 'navigate',
+                        'Sec-Fetch-Site': 'same-origin',
+                        'Sec-Fetch-User': '?1',
+                        'Upgrade-Insecure-Requests': '1',
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+
+                    }
+                elif computer == 'asus':
+                    procell_headers = {
+
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+                        'Accept-Encoding': 'gzip, deflate, br',
+                        'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+                        'Cache-Control': 'max-age=0',
+                        'Connection': 'keep-alive',
+                        'Content-Length': '55',
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        # 'Cookie': cookie,
+                        'Cookie': 'PHPSESSID=jdn2ik3190r8siralp67t6nus6; _ga=GA1.2.1571955753.1573874185; _gid=GA1.2.827395808.1573874185; _fbp=fb.1.1573874187509.1049686961; _gat_gtag_UA_139121893_1=1',
+                        'Host': 'www.mochange.co',
+                        'Origin': 'https://www.mochange.co',
+                        'Referer': 'https://www.mochange.co/cart/payment.php',
+                        'Sec-Fetch-Mode': 'navigate',
+                        'Sec-Fetch-Site': 'same-origin',
+                        'Sec-Fetch-User': '?1',
+                        'Upgrade-Insecure-Requests': '1',
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+
+                    }
+                elif computer == 'pigpig':
+                    procell_headers = {
+
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+                        'Accept-Encoding': 'gzip, deflate, br',
+                        'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+                        'Cache-Control': 'max-age=0',
+                        'Connection': 'keep-alive',
+                        'Content-Length': '55',
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        # 'Cookie': cookie,
+                        'Cookie': '_ga=GA1.2.203279062.1562989751; PHPSESSID=78tjrt78s5ijrlgbe7i8uvelf5; _gid=GA1.2.576081831.1575105621; _fbp=fb.1.1575105621920.719247802; _gat_gtag_UA_139121893_1=1',
+                        'Host': 'www.mochange.co',
+                        'Origin': 'https://www.mochange.co',
+                        'Referer': 'https://www.mochange.co/cart/payment.php',
+                        'Sec-Fetch-Mode': 'navigate',
+                        'Sec-Fetch-Site': 'same-origin',
+                        'Sec-Fetch-User': '?1',
+                        'Upgrade-Insecure-Requests': '1',
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+
+                    }
+
+
+
+                process_payload = {
+                    'TransKey': transKey
                 }
-            elif computer == 'windows':
-                procell_headers = {
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
-                    'Accept-Encoding': 'gzip, deflate, br',
-                    'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
-                    'Cache-Control': 'max-age=0',
-                    'Connection': 'keep-alive',
-                    'Content-Length': '55',
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    # 'Cookie': cookie,
-                    'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=ft987iase39p75g278r50eb7q6; _gid=GA1.2.749101058.1571282254; _gat_gtag_UA_139121893_1=1',
-                    'Host': 'www.mochange.co',
-                    'Origin': 'https://www.mochange.co',
-                    'Referer': 'https://www.mochange.co/cart/payment.php',
-                    'Sec-Fetch-Mode': 'navigate',
-                    'Sec-Fetch-Site': 'same-origin',
-                    'Sec-Fetch-User': '?1',
-                    'Upgrade-Insecure-Requests': '1',
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
-
-                }
-
-            elif computer == 'debbieS':
-                procell_headers = {
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
-                    'Accept-Encoding': 'gzip, deflate, br',
-                    'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
-                    'Cache-Control': 'max-age=0',
-                    'Connection': 'keep-alive',
-                    'Content-Length': '55',
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    # 'Cookie': cookie,
-                    'Cookie': '_ga=GA1.2.813832450.1563535954; PHPSESSID=5ds1iobsb93pki8deb6r1d0j01; _gid=GA1.2.1376374077.1572513755; _fbp=fb.1.1572513755454.1839800735; _gat_gtag_UA_139121893_1=1',
-                    'Host': 'www.mochange.co',
-                    'Origin': 'https://www.mochange.co',
-                    'Referer': 'https://www.mochange.co/cart/payment.php',
-                    'Sec-Fetch-Mode': 'navigate',
-                    'Sec-Fetch-Site': 'same-origin',
-                    'Sec-Fetch-User': '?1',
-                    'Upgrade-Insecure-Requests': '1',
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
-
-                }
-            elif computer == 'asus':
-                procell_headers = {
-
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
-                    'Accept-Encoding': 'gzip, deflate, br',
-                    'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
-                    'Cache-Control': 'max-age=0',
-                    'Connection': 'keep-alive',
-                    'Content-Length': '55',
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    # 'Cookie': cookie,
-                    'Cookie': 'PHPSESSID=jdn2ik3190r8siralp67t6nus6; _ga=GA1.2.1571955753.1573874185; _gid=GA1.2.827395808.1573874185; _fbp=fb.1.1573874187509.1049686961; _gat_gtag_UA_139121893_1=1',
-                    'Host': 'www.mochange.co',
-                    'Origin': 'https://www.mochange.co',
-                    'Referer': 'https://www.mochange.co/cart/payment.php',
-                    'Sec-Fetch-Mode': 'navigate',
-                    'Sec-Fetch-Site': 'same-origin',
-                    'Sec-Fetch-User': '?1',
-                    'Upgrade-Insecure-Requests': '1',
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
-
-                }
-            elif computer == 'pigpig':
-                procell_headers = {
-
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
-                    'Accept-Encoding': 'gzip, deflate, br',
-                    'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
-                    'Cache-Control': 'max-age=0',
-                    'Connection': 'keep-alive',
-                    'Content-Length': '55',
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    # 'Cookie': cookie,
-                    'Cookie': '_ga=GA1.2.203279062.1562989751; PHPSESSID=78tjrt78s5ijrlgbe7i8uvelf5; _gid=GA1.2.576081831.1575105621; _fbp=fb.1.1575105621920.719247802; _gat_gtag_UA_139121893_1=1',
-                    'Host': 'www.mochange.co',
-                    'Origin': 'https://www.mochange.co',
-                    'Referer': 'https://www.mochange.co/cart/payment.php',
-                    'Sec-Fetch-Mode': 'navigate',
-                    'Sec-Fetch-Site': 'same-origin',
-                    'Sec-Fetch-User': '?1',
-                    'Upgrade-Insecure-Requests': '1',
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
-
-                }
-
-
-
-            process_payload = {
-                'TransKey': transKey
-            }
 
 
 
 
-            try:
-                process_result = session_requests.post(process_url, data = process_payload, headers = procell_headers)
-                print('pay result 2:', process_result.content)
-                print('## process RESULT ##', process_result.text)
+                try:
+                    process_result = session_requests.post(process_url, data = process_payload, headers = procell_headers)
+                    print('pay result 2:', process_result.content)
+                    print('## process RESULT ##', process_result.text)
 
 
-                paymentResult = process_result.text
-                str_notEnought = '庫存不足'
-                str_buySuccess = '交易成功'
-                if paymentResult.find(str_notEnought) != -1:
-                    print('搜尋結果: ', str_notEnought)
-                    paymentResult = str_notEnought
-                elif paymentResult.find(str_buySuccess) != -1:
-                    print('搜尋結果: ', str_buySuccess)
+                    paymentResult = process_result.text
+                    str_notEnought = '庫存不足'
+                    str_buySuccess = '交易成功'
+                    if paymentResult.find(str_notEnought) != -1:
+                        print('搜尋結果: ', str_notEnought)
+                        paymentResult = str_notEnought
+                    elif paymentResult.find(str_buySuccess) != -1:
+                        print('搜尋結果: ', str_buySuccess)
 
 
 
 
 
-                if process_result.status_code == requests.codes.ok:
-                    print("付款程序  Success!", process_url)
+                    if process_result.status_code == requests.codes.ok:
+                        print("付款程序  Success!", process_url)
 
-                else:
-                    print("付款程序  Fail!", process_url)
-
-
-
-            except ConnectionError:
-                print('Connection error')
-            except ReadTimeout:
-                print('Time out')
+                    else:
+                        print("付款程序  Fail!", process_url)
 
 
 
-
-
-
+                except ConnectionError:
+                    print('Connection error')
+                except ReadTimeout:
+                    print('Time out')
         else:
             print("付款  Fail!", url)
     except ConnectionError:
@@ -926,7 +955,7 @@ def CartList(email, computer):
             'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
             'Cache-Control': 'max-age=0',
             'Connection': 'keep-alive',
-            'Cookie': 'PHPSESSID=8dauvv3tblj3qeckov32j8jlt4; _ga=GA1.2.249788333.1567947916; _fbp=fb.1.1567947917202.1321095142; _gid=GA1.2.309458116.1572321506; _gat_gtag_UA_139121893_1=1',
+            'Cookie': '_ga=GA1.2.249788333.1567947916; _fbp=fb.1.1567947917202.1321095142; PHPSESSID=3psvbgn213e05rvcfkep1dlp85; _gid=GA1.2.1040713635.1582003150',
             'Host': 'www.mochange.co',
             'Referer': 'https://www.mochange.co/index/index.php',
             'Sec-Fetch-Mode': 'navigate',
@@ -934,7 +963,6 @@ def CartList(email, computer):
             'Sec-Fetch-User': '?1',
             'Upgrade-Insecure-Requests': '1',
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36'
-
 
 
         }
@@ -947,12 +975,14 @@ def CartList(email, computer):
             'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
             'Cache-Control': 'max-age=0',
             'Connection': 'keep-alive',
-            'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=ft987iase39p75g278r50eb7q6; _gid=GA1.2.749101058.1571282254; _gat_gtag_UA_139121893_1=1',
+            # 'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=ft987iase39p75g278r50eb7q6; _gid=GA1.2.749101058.1571282254; _gat_gtag_UA_139121893_1=1',
+            'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=sqtjeplfhvnnhq3nspbltd42b7; _gid=GA1.2.1497596523.1581836286; _gat_gtag_UA_139121893_1=1',
             'Host': 'www.mochange.co',
             'Referer': 'https://www.mochange.co/index/index.php',
             'Upgrade-Insecure-Requests': '1',
             'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36',
 
+            # 'Cookie': '_ga=GA1.2.418205730.1557802358; _fbp=fb.1.1557802358417.1269756375; PHPSESSID=sqtjeplfhvnnhq3nspbltd42b7; _gid=GA1.2.1497596523.1581836286; _gat_gtag_UA_139121893_1=1',
 
         }
 
